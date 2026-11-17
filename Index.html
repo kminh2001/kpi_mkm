@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPI MKM - Quản lý Hiệu suất & Vận hành</title>
+    <!-- Sử dụng Tailwind CSS để thiết kế giao diện nhanh và đẹp -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-indigo-900 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold">📊 KPI MKM - Quản lý Hiệu suất & Vận hành</h1>
+            <p class="text-indigo-200 text-sm mt-2 sm:mt-0">Hệ thống theo dõi và cải tiến liên tục</p>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 py-8">
+        
+        <!-- Thẻ thống kê tổng quan -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <p class="text-sm font-medium text-slate-500">Hiệu suất tổng thể</p>
+                <p class="text-3xl font-bold text-indigo-600 mt-2">95.4%</p>
+                <span class="text-xs text-emerald-600 font-semibold mt-1 inline-block">↑ Tăng 2.1% so với tuần trước</span>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <p class="text-sm font-medium text-slate-500">Mục tiêu hoàn thành</p>
+                <p class="text-3xl font-bold text-indigo-600 mt-2">18 / 20</p>
+                <span class="text-xs text-slate-500 mt-1 inline-block">Đúng tiến độ cam kết</span>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-200">
+                <p class="text-sm font-medium text-slate-500">Điểm Kaizen / Cải tiến</p>
+                <p class="text-3xl font-bold text-indigo-600 mt-2">12 Sáng kiến</p>
+                <span class="text-xs text-indigo-600 font-semibold mt-1 inline-block">Đang áp dụng thực tế</span>
+            </div>
+        </div>
+
+        <!-- Bảng danh sách KPI chi tiết -->
+        <div class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden mb-8">
+            <div class="px-6 py-4 border-b border-slate-200 flex justify-between items-center">
+                <h2 class="text-lg font-bold text-slate-800">Danh mục chỉ số KPI trọng tâm</h2>
+                <span class="text-xs bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-medium">Cập nhật trực tuyến</span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-slate-100 text-slate-600 text-xs uppercase tracking-wider">
+                            <th class="px-6 py-3 font-semibold">Chỉ số / Hạng mục</th>
+                            <th class="px-6 py-3 font-semibold">Mục tiêu</th>
+                            <th class="px-6 py-3 font-semibold">Thực tế</th>
+                            <th class="px-6 py-3 font-semibold">Tỷ lệ đạt</th>
+                            <th class="px-6 py-3 font-semibold">Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 text-sm">
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">Năng suất chuyền may (OEE)</td>
+                            <td class="px-6 py-4 text-slate-600">85%</td>
+                            <td class="px-6 py-4 text-slate-600">87.5%</td>
+                            <td class="px-6 py-4 text-emerald-600 font-semibold">102.9%</td>
+                            <td class="px-6 py-4"><span class="px-2.5 py-1 text-xs bg-emerald-50 text-emerald-700 rounded-full font-medium">Hoàn thành</span></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">Tỷ lệ lỗi sản phẩm (Defect Rate)</td>
+                            <td class="px-6 py-4 text-slate-600">&lt; 1.5%</td>
+                            <td class="px-6 py-4 text-slate-600">1.2%</td>
+                            <td class="px-6 py-4 text-emerald-600 font-semibold">98.0%</td>
+                            <td class="px-6 py-4"><span class="px-2.5 py-1 text-xs bg-emerald-50 text-emerald-700 rounded-full font-medium">Tốt</span></td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 font-medium text-slate-900">Thời gian cân bằng chuyền (Line Balancing)</td>
+                            <td class="px-6 py-4 text-slate-600">&gt; 90%</td>
+                            <td class="px-6 py-4 text-slate-600">88.0%</td>
+                            <td class="px-6 py-4 text-amber-600 font-semibold">97.7%</td>
+                            <td class="px-6 py-4"><span class="px-2.5 py-1 text-xs bg-amber-50 text-amber-700 rounded-full font-medium">Cần cải tiến</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-6 text-center text-sm text-slate-500">
+        <p>Hệ thống quản lý hiệu suất nội bộ - Xây dựng và vận hành bởi đội ngũ nhân sự.</p>
+    </footer>
+
+</body>
+</html>
